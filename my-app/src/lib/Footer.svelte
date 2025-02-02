@@ -12,7 +12,7 @@
 
                 </ul>
             </div>
-            <div>
+            <div class="footerLinks">
                 <h4>Categories</h4>
                 <ul>
                     <li><a href="#">Crockery</a></li>
@@ -22,7 +22,7 @@
                     <li><a href="#">Chairs</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="footerLinks">
                 <h4>Our Company</h4>
                 <ul>
                     <li><a href="#">About Us</a></li>
@@ -32,39 +32,160 @@
                 </ul>
             </div>
         </div>
-        <div>
+        <div id="footerRight">
             <h4>Join the Club and Get the Benefits!</h4>
             <form action="#">
                 <!-- <label for="email">Enter your email:</label> -->
                 <input type="email" id="email" name="email">
-                <input type="submit">
+                <button type="submit" id="submit">Submit</button>
             </form>
         </div>
     </div>
     <hr>
     <div>
-        <p>	&copy;SamihaShoshi2025 | Crafted Comforts</p>
+        <p id="footerText">	&copy;SamihaShoshi2025 | Crafted Comforts</p>
     </div>
 </footer>
 
 
 <style>
+
+    /* *{
+        border: 1px solid red;
+    } */
+
+
+    footer li{
+        list-style-type: none;
+        
+    } 
+
+    ul,li, a{
+        padding: 6px 0;
+        margin:0;
+        color:#FFFFFF;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    h4{
+        text-align: left;
+    }
+
     footer{
-        padding: 40px;
+        background-color: #2A254B;
+        color: #FFFFFF;
+        padding: 5px 40px;
     }
 
     #footerUpper{
         display: flex;
-
-
+        flex-direction: row;
+        padding: 0 10px;
     }
 
     #footerLeft{
         display: flex;
+        flex-direction: row;
+        width: 60%;
     }
 
     .footerLinks{
-        
+        text-align: left;
+        padding: 1rem 2rem;
+        width: 30%;
+
     }
+
+    #footerRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        width: 40%;
+    }
+
+    form{
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        gap:0;
+    }
+
+    #email{
+        background-color: #ffffff63;
+        border-radius: 5px 0 0 5px;
+        height: 57px;
+        width: 17rem;
+    }
+
+    button{
+        padding: 15px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #e7e4ff;
+        color: #2A254B;
+    }
+
+    button:hover {
+        background-color: #C2BAFB;
+    }
+
+    #footerText{
+        text-align: center;
+    }
+
+/*-------------------------------------*/
+/*-----------New Media ----------------*/
+@media (max-width: 1040px) and (min-width: 700px){
+
+    *{
+        border: 1px solid red;
+    }
+    #footerUpper{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #footerLeft{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 300px){
+
+*{
+    border: 1px solid blue;
+}
+    #footerUpper{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footerLeft{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .footerLinks{
+        text-align: left;
+        padding: 1rem 2rem;
+        width: 50%;
+    }
+}
 
 </style>

@@ -8,6 +8,7 @@
 
 <Header />
 
- {@render children()} <!--  or you can use <slot/> (slot is a older version)  -->
+ {@render children()} 
+  <!-- or you can use <slot/> (slot is a older version)  -->
 
 <Footer />
