@@ -7,29 +7,82 @@
     
 </svelte:head>
 
-<div>
-    <div class="Hero">
-        <div>
-            <h1>home</h1>
+<main>
+    <div class="hero">
+        <div id="heroText">
+            <div id="heroUpper">
+                <h1>The furniture brand for comfort, with timeless designs </h1>
+                <a href="#" class="btn-opacity-white">View Collection</a>
+            </div>
+            <p>A new era in eco friendly furniture with tasteful colors. Creating beautiful ways to decorate your space while being comfortable. </p>
         </div>
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533430/heroRight_cued2b.png" alt="">
+        <img id="heroImg" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
     </div>
-</div>
+</main>
 
-<h1>Welcome to SvelteKit</h1>
-<h2>Home Page</h2>
-<h3>This is h3</h3>
-<h4>This is h4</h4>
-<img src="../../static/logo.png" alt="" height="1000px">
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-<p> This is Home page</p>
 
 <style>
     *{
         border: 1px solid red;
     }
+
+    p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    main{
+        margin: 15px 90px;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+        background-color: #2A254B;
+        color: #ffffff;
+    }
+
+    #heroImg{
+        width: 35%;
+    }
+
+    #heroText{
+        margin: 45px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #heroUpper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    a{
+        background-color: #59537d;
+        padding: 20px 30px;
+        margin: 20px 0;
+        width: max-content;
+        color: #ffffff;
+        text-decoration: none;
+        border: 2px solid #2A254B;
+    }
+
+    a:hover{
+        box-shadow: 0 0 30px #C2BAFB;
+        transition-delay: 0.3s; 
+    }
+
 </style>
 
+<!-- <h1>Welcome to SvelteKit</h1>
+<h2>Home Page</h2>
+<h3>This is h3</h3>
+<h4>This is h4</h4>
+<img src="../../static/logo.png" alt="" height="1000px">
+<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<p> This is Home page</p> -->
 
 
 

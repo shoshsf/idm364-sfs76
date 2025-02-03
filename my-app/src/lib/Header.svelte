@@ -49,6 +49,7 @@
     /* *{
         border: 1px solid red;
     } */
+
      header{
         padding: 0;
      }
@@ -82,7 +83,8 @@
         align-items:end;
         flex-wrap: wrap;
         width:max-content;
-        gap: 20px;
+        gap: 10px;
+        margin: 0;
         border-bottom: 1px solid  #2A254B;
     }
 
@@ -91,14 +93,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
         padding: 0 1rem;
     }
 
-    .nav-links a {
+    .nav-links a{
         text-decoration: none;
         color: #2A254B;
+        padding: 20px 15px;
     }
+
+    
 
     .hamburger {
         display: none;
@@ -152,7 +156,7 @@
 
    
 
-    @media (max-width: 950px) {
+    @media (max-width: 1000px) {
 
         .nav-links {
             display: none;

@@ -144,9 +144,6 @@
 /*-----------New Media ----------------*/
 @media (max-width: 1040px) and (min-width: 700px){
 
-    *{
-        border: 1px solid red;
-    }
     #footerUpper{
         flex-direction: column-reverse;
         justify-content: center;
