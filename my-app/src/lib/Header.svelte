@@ -21,7 +21,7 @@
                 </a>
             </div>
             <div class="nav-links" class:open={isOpen}>
-              <ul>
+              <ul class="nav-ul">
                 <a href="#"><li>Plant pots</li></a>
                 <a href="#"><li>Ceramics</li></a>
                 <a href="#"><li>Tables</li></a>
@@ -80,10 +80,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:end;
+        align-items: end;
         flex-wrap: wrap;
-        width:max-content;
-        gap: 10px;
+        width: max-content;
         margin: 0;
         border-bottom: 1px solid  #2A254B;
     }
@@ -93,8 +92,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 1rem;
+        margin:0;
+        /* padding: 0 1rem; */
     }
+    
 
     .nav-links a{
         text-decoration: none;
@@ -102,7 +103,14 @@
         padding: 20px 15px;
     }
 
-    
+    .nav-links a:hover{
+        /* outline: 3px solid green; */
+        border-bottom: 2px solid #2A254B;
+        background-color: #e0dbff ;
+
+    }
+
+
 
     .hamburger {
         display: none;
