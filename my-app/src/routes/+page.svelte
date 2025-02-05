@@ -7,6 +7,10 @@
     
 </svelte:head>
 
+<script>
+    import CeramicView from "$lib/CeramicView.svelte";
+</script>
+
 <main>
     <div class="hero">
         <div id="heroText">
@@ -20,6 +24,8 @@
             <img id="heroImg" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         
     </div>
+
+    <CeramicView />
 </main>
 
 
@@ -33,13 +39,13 @@
         line-height: 30px;
     }
 
-    main{
+    /* main{
         margin: 15px 90px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .hero{
         display: flex;
