@@ -45,12 +45,14 @@ input{
 }
 
 main{
-  margin: 15px 90px;
+  margin: 15px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
 
 @media (max-width: 900px) {
 

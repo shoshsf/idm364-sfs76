@@ -9,6 +9,7 @@
 
 <script>
     import CeramicView from "$lib/CeramicView.svelte";
+    import PopularView from "$lib/PopularView.svelte";
 </script>
 
 <main>
@@ -26,6 +27,7 @@
     </div>
 
     <CeramicView />
+    <PopularView />
 </main>
 
 
@@ -83,27 +85,30 @@
     }
 
     a{
-        background-color: #59537d;
+        background-color: #2A254B;
+        border: 2px solid #F9F9F9;
         padding: 20px 30px;
-        margin: 20px 0;
         color: #ffffff;
+        margin: 20px 0;
         text-decoration: none;
-        border: 2px solid #2A254B;
         width: 50%;
         text-align: center;
     }
 
     a:hover{
-        box-shadow: 0 0 30px #C2BAFB;
-        transition-delay: 0.3s; 
+        background-color: #F9F9F9;
+        border: 2px solid #2A254B;
+        padding: 20px 30px;
+        color: #2A254B;
+        /* box-shadow: 0 0 10px #C2BAFB; */
+        transition-delay: 0.3s;
     }
+
+    
 
 
     @media (max-width: 900px) {
 
-        main{
-            margin: 15px 50px;
-        }
 
         /* #heroImg{
             width: 35%;
@@ -120,9 +125,6 @@
     }
 
     @media (max-width: 800px) {
-        main{
-            margin: 15px 20px;
-        }
 
         .hero{
             display: flex;
@@ -144,17 +146,6 @@
         }
 
     }
-
-
-
-    @media (max-width: 500px) {
-
-        main{
-            margin: 15px 0px;
-        }
-
-    }
-
 
 </style>
 

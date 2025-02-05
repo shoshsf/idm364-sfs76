@@ -1,6 +1,6 @@
 <div class="container">
     <div class="containerInner">
-        <h2>New ceramics</h2>
+        <h2>Our popular products</h2>
         <div class="row">
             <a href="#" class="product">
                 <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
