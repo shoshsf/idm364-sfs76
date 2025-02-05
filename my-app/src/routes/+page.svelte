@@ -12,19 +12,21 @@
         <div id="heroText">
             <div id="heroUpper">
                 <h1>The furniture brand for comfort, with timeless designs </h1>
-                <a href="#" class="btn-opacity-white">View Collection</a>
+                <p>A new era in eco friendly furniture with tasteful colors. Creating beautiful ways to decorate your space while being comfortable. </p>
             </div>
-            <p>A new era in eco friendly furniture with tasteful colors. Creating beautiful ways to decorate your space while being comfortable. </p>
+            <a href="#" class="btn-opacity-white">View Collection</a>
+
         </div>
-        <img id="heroImg" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+            <img id="heroImg" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        
     </div>
 </main>
 
 
 <style>
-    *{
+    /* *{
         border: 1px solid red;
-    }
+    } */
 
     p{
         font-size: 20px;
@@ -33,18 +35,33 @@
 
     main{
         margin: 15px 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .hero{
         display: flex;
         flex-direction: row;
+        width: auto;
         height: 30%;
         background-color: #2A254B;
         color: #ffffff;
     }
 
+    /* #heroImg{
+        width: auto;
+        height: 100%;
+    } */
+
     #heroImg{
-        width: 35%;
+        object-fit: cover;
+        /* width: auto;
+        height: 100%; */
+        position: relative;
+        top: 0;
+        right: 0;
     }
 
     #heroText{
@@ -63,16 +80,75 @@
         background-color: #59537d;
         padding: 20px 30px;
         margin: 20px 0;
-        width: max-content;
         color: #ffffff;
         text-decoration: none;
         border: 2px solid #2A254B;
+        width: 50%;
+        text-align: center;
     }
 
     a:hover{
         box-shadow: 0 0 30px #C2BAFB;
         transition-delay: 0.3s; 
     }
+
+
+    @media (max-width: 900px) {
+
+        main{
+            margin: 15px 50px;
+        }
+
+        /* #heroImg{
+            width: 35%;
+            height: auto;
+        } */
+
+        #heroText{
+            margin: 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+    }
+
+    @media (max-width: 800px) {
+        main{
+            margin: 15px 20px;
+        }
+
+        .hero{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #heroImg{
+            width: 0%;
+            height: 0%;
+            border: none;
+            border-radius: 0 ;
+            padding: 0;
+            visibility: hidden;
+
+
+        }
+
+    }
+
+
+
+    @media (max-width: 500px) {
+
+        main{
+            margin: 15px 0px;
+        }
+
+    }
+
 
 </style>
 

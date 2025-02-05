@@ -256,9 +256,6 @@
         } 
     }
     @media (max-width: 490px){
-        *{
-            border: 1px solid red;
-        }
 
         .logoImg{
             width: 190px;
