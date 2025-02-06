@@ -8,11 +8,13 @@
 </svelte:head>
 
 <script>
+    import OurBrand from "$lib/OurBrand.svelte";
     import CeramicView from "$lib/CeramicView.svelte";
     import PopularView from "$lib/PopularView.svelte";
+
 </script>
 
-<main>
+
     <div class="hero">
         <div id="heroText">
             <div id="heroUpper">
@@ -26,9 +28,10 @@
         
     </div>
 
+    <OurBrand />
     <CeramicView />
     <PopularView />
-</main>
+
 
 
 <style>
