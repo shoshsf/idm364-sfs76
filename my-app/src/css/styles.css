@@ -46,12 +46,18 @@ input{
 }
 
 main{
-  margin: 15px 50px;
+  margin: 40px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
+
+/* *{
+  border: 1px solid red;
+} */
 
 @media screen and (max-width: 1055px){
 

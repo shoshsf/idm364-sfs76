@@ -8,6 +8,7 @@
 </svelte:head>
 
 <script>
+    import HeroHome from "$lib/HeroHome.svelte";
     import OurBrand from "$lib/OurBrand.svelte";
     import CeramicView from "$lib/CeramicView.svelte";
     import PopularView from "$lib/PopularView.svelte";
@@ -15,141 +16,11 @@
 </script>
 
 
-    <div class="hero">
-        <div id="heroText">
-            <div id="heroUpper">
-                <h1>The furniture brand for comfort, with timeless designs </h1>
-                <p>A new era in eco friendly furniture with tasteful colors. Creating beautiful ways to decorate your space while being comfortable. </p>
-            </div>
-            <a href="#" class="btn-opacity-white">View Collection</a>
+<HeroHome />
+<OurBrand />
+<CeramicView />
+<PopularView />
 
-        </div>
-            <img id="heroImg" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
-    </div>
-
-    <OurBrand />
-    <CeramicView />
-    <PopularView />
-
-
-
-<style>
-    /* *{
-        border: 1px solid red;
-    } */
-
-    p{
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    /* main{
-        margin: 15px 90px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
-
-    .hero{
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        height: 30%;
-        background-color: #2A254B;
-        color: #ffffff;
-    }
-
-    /* #heroImg{
-        width: auto;
-        height: 100%;
-    } */
-
-    #heroImg{
-        object-fit: cover;
-        /* width: auto;
-        height: 100%; */
-        position: relative;
-        top: 0;
-        right: 0;
-    }
-
-    #heroText{
-        margin: 45px;
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
-    }
-
-    #heroUpper{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .btn-opacity-white{
-        background-color: #2A254B;
-        border: 2px solid #F9F9F9;
-        padding: 20px 30px;
-        color: #ffffff;
-        margin: 20px 0;
-        text-decoration: none;
-        width: 50%;
-        text-align: center;
-    }
-
-    .btn-opacity-white:hover{
-        background-color: #F9F9F9;
-        border: 2px solid #2A254B;
-        padding: 20px 30px;
-        color: #2A254B;
-        /* box-shadow: 0 0 10px #C2BAFB; */
-        transition-delay: 0.3s;
-    }
-
-    
-
-
-    @media (max-width: 900px) {
-
-
-        /* #heroImg{
-            width: 35%;
-            height: auto;
-        } */
-
-        #heroText{
-            margin: 35px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-    }
-
-    @media (max-width: 800px) {
-
-        .hero{
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        #heroImg{
-            width: 0%;
-            height: 0%;
-            border: none;
-            border-radius: 0 ;
-            padding: 0;
-            visibility: hidden;
-
-
-        }
-
-    }
-
-</style>
 
 <!-- <h1>Welcome to SvelteKit</h1>
 <h2>Home Page</h2>

@@ -42,7 +42,8 @@
     }
 
     .containerInner{
-        margin: 20px 30px;
+        margin: 10px 0;
+        padding: 30px 0;
     }
 
     .row{
