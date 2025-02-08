@@ -6,9 +6,10 @@
 <header>
     <div id='topSec'>
         <!-- <img src="../../../logo.png" class="logoImg" alt=""> -->
+        <a href="/" data-sveltekit-preload-data="off" class="btn-home">
+            <img src="https://res.cloudinary.com/drkhhutl3/image/upload/logo_cmtnqk.png" class="logoImg" alt="">
+        </a>
 
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/logo_cmtnqk.png" class="logoImg" alt="">
-        
         <nav class="navbar">
             <div class="iconSec">
                 <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/Search_xlrvt7.png" class="icons" id="search" alt=""></a>
@@ -50,9 +51,9 @@
         border: 1px solid red;
     } */
 
-     header{
+    header{
         padding: 0;
-     }
+    }
 
     #topSec{
         display: flex;
@@ -84,7 +85,10 @@
         flex-wrap: wrap;
         width: max-content;
         margin: 0;
+        padding: 0;
+        width: max-content;
         border-bottom: 1px solid  #2A254B;
+
     }
 
     .nav-links ul{
@@ -93,6 +97,7 @@
         justify-content: center;
         align-items: center;
         margin:0;
+        padding: 0;
         /* padding: 0 1rem; */
     }
     
@@ -105,12 +110,10 @@
 
     .nav-links a:hover{
         /* outline: 3px solid green; */
-        border-bottom: 2px solid #2A254B;
+        border-bottom:  1px solid #2A254B;
         background-color: #e0dbff ;
 
     }
-
-
 
     .hamburger {
         display: none;
@@ -181,18 +184,19 @@
             gap: none;
             border-bottom: none;
         }
+        .nav-links.open{
+            z-index: 1;
+        }
         .nav-links.open ul{
             list-style: none;
             display: flex;
             flex-direction: column;
-            width: 100%;
-            gap: 1rem;
-            padding: 0 1rem;
-
             justify-content: center;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0 1rem;
+            width: 100%;
+            padding: 2rem 1rem;
+            gap: 1rem;
+            
         }
         
         .nav-links a {
@@ -255,7 +259,20 @@
             border-radius: 5px;
         } 
     }
-    @media (max-width: 490px){
+    @media (max-width: 500px){
+
+        .nav-links {          
+            top: 80px;
+            right: 0;
+            background: white;
+            width: 100%;
+            text-align: center;            
+            justify-content: none;
+            align-items:none;
+            flex-wrap: none;
+            gap: none;
+            border-bottom: none;
+        }
 
         .logoImg{
             width: 190px;

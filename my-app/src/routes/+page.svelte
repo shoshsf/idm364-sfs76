@@ -25,7 +25,6 @@
 
         </div>
             <img id="heroImg" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
-        
     </div>
 
     <OurBrand />
@@ -87,7 +86,7 @@
         flex-direction: column;
     }
 
-    a{
+    .btn-opacity-white{
         background-color: #2A254B;
         border: 2px solid #F9F9F9;
         padding: 20px 30px;
@@ -98,7 +97,7 @@
         text-align: center;
     }
 
-    a:hover{
+    .btn-opacity-white:hover{
         background-color: #F9F9F9;
         border: 2px solid #2A254B;
         padding: 20px 30px;

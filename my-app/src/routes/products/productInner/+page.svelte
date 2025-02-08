@@ -14,10 +14,9 @@
 
 <main>
     <h1>View All Products</h1>
-    
+
     <ProductSort />
     <ProductItemsGrid />
-
 
 </main>
 
