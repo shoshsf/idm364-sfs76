@@ -1,92 +1,3 @@
-<!-- 
-<div class="container">
-	<div class="button col col-1">
-	<button id="minus-btn">-</button>
-	</div>
-	<div class="number col col-2">
-	<h1 id="count">0</h1>
-	</div>
-	<div class="button col col-1">
-	<button id="plus-btn">+</button>
-	</div>
-
-</div>
-
-  
-
-  
-  <style>
-	
-	.container {
-	  display: flex;
-	  border: 4px solid #404040;
-	  background: #ffdc00;
-	  border-radius: 10rem;
-	  width: 150px;
-	  padding: 1rem;
-	  justify-content: space-between;
-	  align-items: center;
-	  align-content: center;
-	}
-  
-	h1 {
-	  margin: 0;
-	  padding: 0;
-	  user-select: none;
-	}
-  
-	.col-1 {
-	  width: 45%;
-	}
-  
-	.col-2 {
-	  width: 25%;
-	}
-  
-	.col > button,
-	.number {
-	  width: 100%;
-	  background: #ffdc00;
-	  border: 0px;
-	  text-align: center;
-	}
-  
-	.button {
-	  font-family: sans-serif;
-	  font-size: 2em;
-	}
-  
-	button {
-	  color: #ff370c;
-	  user-select: none;
-	  outline: none;
-	}
-  </style>
-
-<script>
-	// Ensure the script runs after the DOM is loaded
-	window.onload = function() {
-	  let minusBtn = document.getElementById("minus-btn");
-	  let count = document.getElementById("count");
-	  let plusBtn = document.getElementById("plus-btn");
-  
-	  let countNum = 0;
-	  count.innerHTML = countNum;
-  
-	  minusBtn.addEventListener("click", () => {
-		countNum -= 1;
-		count.innerHTML = countNum;
-	  });
-  
-	  plusBtn.addEventListener("click", () => {
-		countNum += 1;
-		count.innerHTML = countNum;
-	  });
-	};
-  </script>
-   -->
-
-
    <script>
 	let count = 1;
   
@@ -117,8 +28,9 @@
 	.amountSection {
 	  display: flex;
 	  flex-direction: row;
+	  flex-wrap: wrap;
 	  justify-content: space-between;
-	  gap: 20px;
+	  gap: 30px;
 	  margin: 50px 0;
 	}
 
@@ -196,5 +108,47 @@
         color: #F9F9F9;
         transition-delay: 0.3s; 
     }
+
+	@media (max-width: 1150px) {
+
+		.amountSection {
+			justify-content: left;
+			gap: 50px;
+		}
+
+		.addCartBtn{
+			width: 100%;
+		}
+		
+	}
+
+	@media (max-width: 940px) {
+		
+		.amountSection {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+		}
+		 .amountSection{
+			margin: 10px 15px;
+			padding-bottom: 50px;
+
+		 }
+
+		 .amountCounter{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			
+		}
+
+	}
+
+
 
   </style>

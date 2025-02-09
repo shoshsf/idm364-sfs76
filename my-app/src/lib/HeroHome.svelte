@@ -18,13 +18,6 @@
         border: 1px solid red;
     } */
 
-    p{
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-
-
     .hero{
         background-color: #2A254B;
         color: #ffffff;

@@ -167,7 +167,7 @@
 
    
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1080px) {
 
         .nav-links {
             display: none;

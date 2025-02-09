@@ -13,7 +13,7 @@
   import HeroProductDetail from "$lib/HeroProductDetail.svelte";
 </script>
     
-<HeroProductDetail />
+<HeroProductDetail/>
 <MightLikeView />
 <OurBrand />
 

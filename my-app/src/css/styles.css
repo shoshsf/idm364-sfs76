@@ -26,7 +26,7 @@ h4{
 p, ul, li, a{
   font-family: 'Raleway', baloo;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 button{
@@ -53,11 +53,6 @@ main{
   align-items: center;
 }
 
-
-
-/* *{
-  border: 1px solid red;
-} */
 
 @media screen and (max-width: 1055px){
 
@@ -117,10 +112,39 @@ main{
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width: 300px) {
 
   main{
     margin: 15px 5px
+  }
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+  }
+
+  h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+  }
+
+  p, ul, li, a{
+    font-family: 'Raleway', baloo;
+    font-weight: 100;
+    font-size: 16px;
   }
 
 }
