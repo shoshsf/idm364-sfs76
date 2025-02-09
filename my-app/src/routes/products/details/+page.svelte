@@ -7,7 +7,7 @@
     
 </svelte:head>
 
-<script>
+<script lang="js">
   import MightLikeView from "$lib/MightLikeView.svelte";
   import OurBrand from "$lib/OurBrand.svelte";
   import HeroProductDetail from "$lib/HeroProductDetail.svelte";

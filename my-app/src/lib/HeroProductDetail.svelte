@@ -1,10 +1,27 @@
 <script>
     import Counter from "./Counter.svelte";
+
+    let zoomed = false;
+
+    function toggleZoom(event) {
+        const img = event.currentTarget;
+        if (zoomed) {
+            img.style.transform = "scale(1)";
+            zoomed = false;
+        } else {
+            img.style.transform = "scale(1.5)";
+            zoomed = true;
+        }
+    }
+
 </script>
 
 <div class="hero">
     <div id="imageContainer">
-        <img id="image" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739051181/TheDandyChair_Detail_jgwuoz.png" alt="">
+        <img id="image" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739051181/TheDandyChair_Detail_jgwuoz.png" alt="" 
+        On:mouseover={toggleZoom} 
+        On:mouseleave={toggleZoom}
+        >
     </div>
     <div id="textContainer">
         <div id="title">
@@ -42,7 +59,7 @@
             </div>
         </div>
         
-        <Counter/>
+        <Counter />
         
     </div>     
 </div>
@@ -67,6 +84,18 @@
         height: auto;
         overflow: hidden;
         position: relative;
+    }
+
+    
+
+    #imageContainer img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    #imageContainer img:hover {
+        transform: scale(1.5);
     }
 
     #image{

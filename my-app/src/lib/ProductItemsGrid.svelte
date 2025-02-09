@@ -1,68 +1,68 @@
 <div class="product-grid">
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739051181/TheDandyChair_Detail_jgwuoz.png" alt="">
+        <div class="productText">
+            <h4>The Dandy Chair</h4>
+            <p >$250.00</p>
+        </div>
+    </a>
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    <a href="#" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
-        <div class="productText">
-            <h4>The Dandy Chair</h4>
-            <p >$250.00</p>
-        </div>
-    </a>
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
@@ -70,14 +70,14 @@
         </div>
     </a>
 
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    <a href="#" class="product">
+    <a href="/products/details/" class="product">
         <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>

@@ -1,20 +1,31 @@
 <script>
-    import { name } from '$lib/utils';
+    // import { name } from '$lib/utils';
+	import { num_item, total_items } from "$lib/utils";
+
     let isOpen = false;
+
+    $: cartEmpty = $total_items < 1;
+
 </script>
 
 <header>
     <div id='topSec'>
         <!-- <img src="../../../logo.png" class="logoImg" alt=""> -->
-        <a href="/" data-sveltekit-preload-data="off" class="btn-home">
+        <a href="../" data-sveltekit-preload-data="off" class="btn-home">
             <img src="https://res.cloudinary.com/drkhhutl3/image/upload/logo_cmtnqk.png" class="logoImg" alt="">
         </a>
 
         <nav class="navbar">
             <div class="iconSec">
-                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/Search_xlrvt7.png" class="icons" id="search" alt=""></a>
-                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/ShoppingCart_ptopii.png" class="icons" id="search" alt=""></a>
-                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/UserAvatar_nlazqi.png" class="icons" id="search" alt=""></a>
+                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/Search_xlrvt7.png" class="icons" id="search" alt="search icon"></a>
+                
+                {#if $total_items < 1}
+                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/ShoppingCart_ptopii.png" class="icons" id="cart" alt="cart icon" ></a>
+                {:else}
+                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739099809/ShoppingCart2_kcsyyv.png" class="icons" id="cart-full" alt="full cart icon" ></a>
+                {/if}
+                
+                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/UserAvatar_nlazqi.png" class="icons" id="profile" alt="profile icon"></a>
                 <a class="hamburger" on:click={() => isOpen = !isOpen}  class:open={isOpen}>
                     <div class="bar"></div>
                     <div class="bar"></div>

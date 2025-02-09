@@ -4,7 +4,7 @@
             <h1>The furniture brand for comfort, with timeless designs </h1>
             <p>A new era in eco friendly furniture with tasteful colors. Creating beautiful ways to decorate your space while being comfortable. </p>
         </div>
-        <a href="#" class="btn-opacity-white">View Collection</a>
+        <a href="/products/" class="btn-opacity-white">View All Our Products</a>
 
     </div>
     <div id="imageContainer">
@@ -17,6 +17,10 @@
     /* *{
         border: 1px solid red;
     } */
+
+    p{
+        line-height: 32px;
+    }
 
     .hero{
         background-color: #2A254B;
@@ -46,12 +50,13 @@
         margin: 45px;
         display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 50px;
     }
 
     #heroUpper{
         display: flex;
         flex-direction: column;
+
     }
 
     .btn-opacity-white{

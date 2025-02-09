@@ -1,27 +1,37 @@
-   <script>
-	let count = 1;
+   <script lang="js">
+
+	import { num_item, total_items } from "$lib/utils";
+	// import { num_item } from '$lib/utils';
+  // Default value for num_item shown in <span>, not tied to total_items
   
 	function increment() {
-	  count++;
+		num_item.update(n => n + 1); // Increase the count
 	}
   
 	function decrement() {
-	  if (count > 1) {
-		count--;
-	  }
+		num_item.update(n => Math.max(1, n - 1)); // Decrease, but not below 1
 	}
+
+	function addToCart() {
+    //Add to cart logic, increase total_items when item is added to cart
+	total_items.update(n => n + $num_item); // Assuming num_item is the quantity to add to cart
+    console.log('Item added to cart');
+    console.log('Total number of items in cart: ' + $total_items);
+  }
+
+
   </script>
   
   <div class="amountSection">
 	<div class="amountCounter">
 		<label class="amountLabel">Amount:</label>
 		<div class="counter">
-			<button class="counterLeft"on:click={decrement}>-</button>
-			<span>{count}</span>
-			<button class="counterRight" on:click={increment}>+</button>
+			<button class="counterLeft" onclick={decrement} disabled={$num_item <= 1}>-</button>
+			<span>{$num_item}</span>
+			<button class="counterRight" onclick={increment}>+</button>
 		</div>
 	</div>
-	<button class="addCartBtn">Add to cart</button>
+	<button class="addCartBtn" onclick={addToCart}>Add to cart</button>
   </div>
   
   <style>

@@ -2,29 +2,36 @@
     <div class="containerInner">
         <h2>New ceramics</h2>
         <div class="row">
+            <a href="/products/details" class="product">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheDandyChair_Card_xmrqoo.png" alt="">
+                <div class="productText">
+                    <h4>The Otter Chair</h4>
+                    <p >$250.00</p>
+                </div>
+            </a>
             <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
                 <div class="productText">
                     <h4>The Dandy Chair</h4>
                     <p >$250.00</p>
                 </div>
             </a>
             <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
                 <div class="productText">
                     <h4>The Dandy Chair</h4>
                     <p >$250.00</p>
                 </div>
             </a>
             <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
                 <div class="productText">
                     <h4>The Dandy Chair</h4>
                     <p >$250.00</p>
                 </div>
             </a>
             <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
                 <div class="productText">
                     <h4>The Dandy Chair</h4>
                     <p >$250.00</p>
@@ -80,7 +87,6 @@
 
     .productText{
         padding: 5px 15px;
-        margin: 0;
         text-decoration: none;
     }
 
