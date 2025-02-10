@@ -3,31 +3,34 @@
         <h2>You might also like</h2>
         <div class="row">
             <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
                 <div class="productText">
-                    <h4>The Dandy Chair</h4>
-                    <p >$250.00</p>
+                    <h4>Minimalist White Ceramic Planter</h4>
+                    <p >$34.99</p>
                 </div>
-            </a>
-            <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+            </a><a href="#" class="product">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
                 <div class="productText">
-                    <h4>The Dandy Chair</h4>
-                    <p >$250.00</p>
+                    <h4>Minimalist White Ceramic Planter</h4>
+                    <p >$34.99</p>
                 </div>
-            </a>
-            <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+            </a><a href="#" class="product">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
                 <div class="productText">
-                    <h4>The Dandy Chair</h4>
-                    <p >$250.00</p>
+                    <h4>Minimalist White Ceramic Planter</h4>
+                    <p >$34.99</p>
                 </div>
-            </a>
-            <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+            </a><a href="#" class="product">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
                 <div class="productText">
-                    <h4>The Dandy Chair</h4>
-                    <p >$250.00</p>
+                    <h4>Minimalist White Ceramic Planter</h4>
+                    <p >$34.99</p>
+                </div>
+            </a><a href="#" class="product">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
+                <div class="productText">
+                    <h4>Minimalist White Ceramic Planter</h4>
+                    <p >$34.99</p>
                 </div>
             </a>
         </div>

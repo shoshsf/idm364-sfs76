@@ -1,39 +1,39 @@
+
+
+
 <div class="container">
     <div class="containerInner">
         <h2>New ceramics</h2>
         <div class="row">
-            <a href="/products/details" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheDandyChair_Card_xmrqoo.png" alt="">
+            <a href="#" class="product">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154241/product_TerraRusticClayPot_tofdoo.png" alt="">
                 <div class="productText">
-                    <h4>The Otter Chair</h4>
+                    <h4>Terra Rustic Clay Pot</h4>
                     <p >$250.00</p>
                 </div>
             </a>
             <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154241/product_TerraRusticClayPot_tofdoo.png" alt="">
                 <div class="productText">
-                    <h4>The Dandy Chair</h4>
+                    <h4>Terra Rustic Clay Pot</h4>
                     <p >$250.00</p>
                 </div>
-            </a>
-            <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
+            </a><a href="#" class="product">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154241/product_TerraRusticClayPot_tofdoo.png" alt="">
                 <div class="productText">
-                    <h4>The Dandy Chair</h4>
+                    <h4>Terra Rustic Clay Pot</h4>
                     <p >$250.00</p>
                 </div>
-            </a>
-            <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
+            </a><a href="#" class="product">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154241/product_TerraRusticClayPot_tofdoo.png" alt="">
                 <div class="productText">
-                    <h4>The Dandy Chair</h4>
+                    <h4>Terra Rustic Clay Pot</h4>
                     <p >$250.00</p>
                 </div>
-            </a>
-            <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
+            </a><a href="#" class="product">
+                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154241/product_TerraRusticClayPot_tofdoo.png" alt="">
                 <div class="productText">
-                    <h4>The Dandy Chair</h4>
+                    <h4>Terra Rustic Clay Pot</h4>
                     <p >$250.00</p>
                 </div>
             </a>

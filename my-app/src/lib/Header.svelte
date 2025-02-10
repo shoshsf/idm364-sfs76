@@ -1,6 +1,6 @@
 <script>
     // import { name } from '$lib/utils';
-	import { num_item, total_items } from "$lib/utils";
+	import { num_item, total_items } from "$lib/store";
 
     let isOpen = false;
 
@@ -20,9 +20,9 @@
                 <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/Search_xlrvt7.png" class="icons" id="search" alt="search icon"></a>
                 
                 {#if $total_items < 1}
-                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/ShoppingCart_ptopii.png" class="icons" id="cart" alt="cart icon" ></a>
+                <a href="/cart" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/ShoppingCart_ptopii.png" class="icons" id="cart" alt="cart icon" ></a>
                 {:else}
-                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739099809/ShoppingCart2_kcsyyv.png" class="icons" id="cart-full" alt="full cart icon" ></a>
+                <a href="/cart" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739099809/ShoppingCart2_kcsyyv.png" class="icons" id="cart-full" alt="full cart icon" ></a>
                 {/if}
                 
                 <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/UserAvatar_nlazqi.png" class="icons" id="profile" alt="profile icon"></a>

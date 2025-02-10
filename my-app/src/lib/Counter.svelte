@@ -1,6 +1,6 @@
    <script lang="js">
 
-	import { num_item, total_items } from "$lib/utils";
+	import { num_item, total_items } from "$lib/store";
 	// import { num_item } from '$lib/utils';
   // Default value for num_item shown in <span>, not tied to total_items
   

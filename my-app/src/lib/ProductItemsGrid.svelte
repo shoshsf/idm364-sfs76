@@ -1,91 +1,107 @@
+
+<script>
+    import { products } from "./products.js";
+</script>
+
+<div class="product-grid">
+    {#each $products as product}
+        <a href={`/products/${product.id}`} class="product">
+            <img src={product.productImg} alt={product.name} />
+            <div class="productText">
+                <h4>{product.name}</h4>
+                <p><strong>Price:</strong> ${product.price}</p>
+            </div>
+        </a>
+    {/each}
+</div>
+
+<!-- 
 <div class="product-grid">
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739051181/TheDandyChair_Detail_jgwuoz.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheDandyChair_Card_xmrqoo.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
-        <div class="productText">
-            <h4>The Dandy Chair</h4>
-            <p >$250.00</p>
-        </div>
-    </a>
-
-    <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
     <a href="/products/details/" class="product">
-        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
         <div class="productText">
             <h4>The Dandy Chair</h4>
             <p >$250.00</p>
         </div>
     </a>
-    
-</div>
+    <a href="/products/details/" class="product">
+        <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739104850/TheOtterChair_Card_nb3fzl.png" alt="">
+        <div class="productText">
+            <h4>The Dandy Chair</h4>
+            <p >$250.00</p>
+        </div>
+    </a>
+</div> -->
 
 <style>
     /* *{

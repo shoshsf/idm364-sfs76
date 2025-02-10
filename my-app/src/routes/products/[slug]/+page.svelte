@@ -1,10 +1,14 @@
+<script lang="js">
 
-<!-- This is OLD HTML CSS SET UP -->
+    const {data} = $props();
 
-<!-- <script>
-    import Counter from "./Counter.svelte";
+    const { name, longDescription, price,  quantity, totalAvailable, heroImg, cartImg, height, width, depth} = data.product;
 
-    import { products } from "./products.js";
+    $inspect(data);
+
+    import Counter from '$lib/Counter.svelte';
+    import MightLikeView from "$lib/MightLikeView.svelte";
+    import OurBrand from "$lib/OurBrand.svelte";
 
     let zoomed = false;
 
@@ -18,51 +22,53 @@
             zoomed = true;
         }
     }
-
 </script>
+
 
 <div class="hero">
     <div id="imageContainer">
-        <img id="image" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739144316/terra_rustic_clay_pot-hero_tuckn7.png" alt="" 
-        On:mouseover={toggleZoom} 
-        On:mouseleave={toggleZoom}
-        >
+        <img id="image" src={heroImg} alt={name} On:mouseover={toggleZoom} 
+        On:mouseleave={toggleZoom}>
     </div>
     <div id="textContainer">
         <div id="title">
-            <h1> The Otter Chair</h1>
-            <h2>$250.00</h2>
+            <h1>{name}</h1>
+            <h2>${price}</h2>
         </div>
         <div id="productDetails">
             <div id="desc">
                 <h3>Description</h3>
-                <p>
-                    A timeless design, with premium materials features as one of our most popular and iconic pieces. The Otter chair is perfect or any stylish living space with beech legs and lambskin leather upholstery.
-                </p>
+                <p>{longDescription}</p>
             </div>
             <div id="dimensions">
                 <h3>Dimensions</h3>
                 <div class="dimensionInner" >
                     <div class="">
                         <p>Height</p>
-                        <p>110cm</p>
+                        <p>{height} in</p>
                     </div>
                     <div class=" divider1">
                         <p>Width</p>
-                        <p>75cm</p>
+                        <p>{width} in</p>
                     </div>
                     <div class="">
                         <p>Depth</p>
-                        <p>50cm</p>
+                        <p>{depth} in</p>
                     </div>
                 </div>
             </div>
+            
         </div>
-        
+
         <Counter />
         
     </div>     
 </div>
+
+<MightLikeView />
+<OurBrand />
+
+
 
 <style>
     /* *{
@@ -234,13 +240,29 @@
             overflow: visible;
             position: relative;
         }
+        #imageContainer img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        }
+
+        #imageContainer img:hover {
+            transform: scale(1.5);
+        }
 
         #image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            position: absolute;
+        }
+
+        /* #image{
             object-fit: cover;
             position: relative;
             top: 0;
             right: 0;
-        }
+        } */
 
         #textContainer{
             display: flex;
@@ -343,4 +365,4 @@
 
 
 
-</style> -->
+</style>
