@@ -1,4 +1,4 @@
-
+<!-- 
 <script>
     import { products } from "./products.js";
 </script>
@@ -13,7 +13,7 @@
             </div>
         </a>
     {/each}
-</div>
+</div> -->
 
 <!-- 
 <div class="product-grid">

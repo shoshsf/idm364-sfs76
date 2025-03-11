@@ -7,18 +7,17 @@
     
 </svelte:head>
 
-<script>
+<!-- <script>
     const { data } = $props();
 
     $inspect(data);
+    
     import ProductSort from "$lib/ProductSort.svelte";
     // import ProductItemsGrid from "$lib/ProductItemsGrid.svelte";
-</script>
+</script> -->
 
-<main>
+<!-- <main>
     <h1>View All Products</h1>
-    <ProductSort />
-    <!-- <ProductItemsGrid /> -->
     <div class="product-grid">
         {#each data.products as {name, productImg, price, slug}}
             <a href="/products/{slug}" class="product">
@@ -31,12 +30,40 @@
         {/each}
     </div>
 
-</main>
+</main> -->
+
+
+<!--  OLD LOCAL DATABASE Version  -->
 
 
 
 
+<!-- NEW VERSION CONNECTED TO SUPABASE! -->
 
+<script lang="js">
+     
+    const { data } = $props();
+    // $inspect(data);
+
+</script>
+
+<div class="product-grid">
+
+    {#if data.products}
+            {#each data.products as product}
+            <a href="/products/{product.slug}" class="product">
+                <img src={product.productImg} alt={product.title} />
+                <div class="productText">
+                    <h4>{product.title}</h4>
+                    <p><strong>Price:</strong> ${product.price}</p>
+                </div>
+            </a>
+            {/each}
+        
+        {:else }
+        <p>Loading...</p>
+    {/if}
+    </div>
 
 <style>
     /* *{
@@ -112,22 +139,3 @@
     }
 </style>
 
-
-<!-- ---------------------- -->
-<!-- This worked before -->
-<!-- <script>
-    import ProductSort from "$lib/ProductSort.svelte";
-    import ProductItemsGrid from "$lib/ProductItemsGrid.svelte";
-</script>
-
-<main>
-    <h1>View All Products</h1>
-    <ProductSort />
-    <ProductItemsGrid />
-
-</main>
-
-
-<style>
-
-</style> -->

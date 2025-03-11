@@ -25,7 +25,7 @@
                 <a href="/cart" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739099809/ShoppingCart2_kcsyyv.png" class="icons" id="cart-full" alt="full cart icon" ></a>
                 {/if}
                 
-                <a href="#" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/UserAvatar_nlazqi.png" class="icons" id="profile" alt="profile icon"></a>
+                <a href="/signin" class="iconLink"><img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738533410/UserAvatar_nlazqi.png" class="icons" id="profile" alt="profile icon"></a>
                 <a class="hamburger" on:click={() => isOpen = !isOpen}  class:open={isOpen}>
                     <div class="bar"></div>
                     <div class="bar"></div>
