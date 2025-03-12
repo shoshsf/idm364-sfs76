@@ -56,7 +56,7 @@
                 <img src={product.productImg} alt={product.title} />
                 <div class="productText">
                     <h4>{product.title}</h4>
-                    <p><strong>Price:</strong> ${product.price}</p>
+                    <!-- <p><strong>Price:</strong> ${product.price}</p> -->
                 </div>
             </a>
             {/each}
