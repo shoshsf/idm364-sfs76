@@ -47,8 +47,9 @@
 
 </script>
 
-<div class="product-grid">
+<h1>View Our Products</h1>
 
+<div class="product-grid">
     {#if data.products}
             {#each data.products as product}
             <a href="/products/{product.slug}" class="product">
@@ -63,7 +64,7 @@
         {:else }
         <p>Loading...</p>
     {/if}
-    </div>
+</div>
 
 <style>
     /* *{

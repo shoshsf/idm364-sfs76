@@ -7,7 +7,7 @@
     <div class="filters">
         <select bind:value={choice1}>
             <option value="default">Select Category</option>
-            <option value="All Products">View All</option>
+            <option value="All Products" href="/products/">View All</option>
             <option value="Our Plant Pots">Plant Pots</option>
             <option value="Our Ceramics">Ceramics</option>
             <option value="Our Tables">Tables</option>

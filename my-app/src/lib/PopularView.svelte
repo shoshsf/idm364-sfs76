@@ -9,13 +9,14 @@
                     <p >$34.99</p>
                 </div>
             </a>
-            <a href="#" class="product">
+            <!-- <a href="#" class="product">
                 <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
                 <div class="productText">
                     <h4>Minimalist White Ceramic Planter</h4>
                     <p >$34.99</p>
                 </div>
-            </a><a href="#" class="product">
+            </a> -->
+            <a href="#" class="product">
                 <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
                 <div class="productText">
                     <h4>Minimalist White Ceramic Planter</h4>
@@ -57,9 +58,15 @@
         padding: 30px 0;  
     }
 
-    .row{
+    /* .row{
         display: flex;
         flex-direction: row;
+        gap: 20px;
+    } */
+     
+    .row{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         gap: 20px;
     }
 
