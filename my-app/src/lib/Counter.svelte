@@ -1,38 +1,58 @@
-   <script lang="js">
+   <!-- <script lang="js">
 
-	import { num_item, total_items } from "$lib/store";
-	// import { num_item } from '$lib/utils';
-  // Default value for num_item shown in <span>, not tied to total_items
-  
-	function increment() {
-		num_item.update(n => n + 1); // Increase the count
+		import { num_item, total_items } from "$lib/store";
+		// import { num_item } from '$lib/utils';
+	// Default value for num_item shown in <span>, not tied to total_items
+	
+		function increment() {
+			num_item.update(n => n + 1); // Increase the count
+		}
+	
+		function decrement() {
+			num_item.update(n => Math.max(1, n - 1)); // Decrease, but not below 1
+		}
+
+		function addToCart() {
+		//Add to cart logic, increase total_items when item is added to cart
+		total_items.update(n => n + $num_item); // Assuming num_item is the quantity to add to cart
+		console.log('Item added to cart');
+		console.log('Total number of items in cart: ' + $total_items);
 	}
+  </script> -->
   
-	function decrement() {
-		num_item.update(n => Math.max(1, n - 1)); // Decrease, but not below 1
-	}
 
-	function addToCart() {
-    //Add to cart logic, increase total_items when item is added to cart
-	total_items.update(n => n + $num_item); // Assuming num_item is the quantity to add to cart
-    console.log('Item added to cart');
-    console.log('Total number of items in cart: ' + $total_items);
-  }
-
-
+<script lang="js">
+    import { num_item, total_items, addToCart } from "$lib/store";
+    
+    // Add a prop to receive the product data
+    export let product;
+  
+    function increment() {
+      num_item.update(n => n + 1);
+    }
+    
+    function decrement() {
+      num_item.update(n => Math.max(1, n - 1));
+    }
+  
+    function handleAddToCart() {
+      addToCart(product, $num_item);
+      num_item.set(1);
+    }
   </script>
   
   <div class="amountSection">
-	<div class="amountCounter">
-		<label class="amountLabel">Amount:</label>
-		<div class="counter">
-			<button class="counterLeft" onclick={decrement} disabled={$num_item <= 1}>-</button>
-			<span>{$num_item}</span>
-			<button class="counterRight" onclick={increment}>+</button>
-		</div>
-	</div>
-	<button class="addCartBtn" onclick={addToCart}>Add to cart</button>
+    <div class="amountCounter">
+      <label class="amountLabel">Amount:</label>
+      <div class="counter">
+        <button class="counterLeft" on:click={decrement} disabled={$num_item <= 1}>-</button>
+        <span>{$num_item}</span>
+        <button class="counterRight" on:click={increment}>+</button>
+      </div>
+    </div>
+    <button class="addCartBtn" on:click={handleAddToCart}>Add to cart</button>
   </div>
+  
   
   <style>
 	.amountSection {

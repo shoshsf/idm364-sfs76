@@ -10,6 +10,7 @@
     <div id="imageContainer">
         <img id="image" src="https://res.cloudinary.com/drkhhutl3/image/upload/v1738544320/heroRight_gmo59f.png" alt="">
     </div>
+    
 </div>
 
 

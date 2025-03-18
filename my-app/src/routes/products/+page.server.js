@@ -1,3 +1,17 @@
+// <!-- NEW VERSION CONNECTED TO SUPABASE! -->
+
+import { supabase } from '$lib/server/supabase_client';
+export async function load (){
+    const { data } = await supabase.from('products').select('*');
+    return { 
+        products: data ?? [] 
+    };
+}
+
+
+
+// <!--  OLD LOCAL DATABASE Version  -->
+
 // import { slugify } from '$lib/utils';
 // import { products } from '$lib/items';
 
@@ -19,18 +33,3 @@
 //     }))
 //   };
 // }
-
-// <!--  OLD LOCAL DATABASE Version  -->
-
-
-
-
-// <!-- NEW VERSION CONNECTED TO SUPABASE! -->
-
-import { supabase } from '$lib/server/supabase_client';
-export async function load (){
-    const { data } = await supabase.from('products').select('*');
-    return { 
-        products: data ?? [] 
-    };
-}

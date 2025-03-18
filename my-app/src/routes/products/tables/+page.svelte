@@ -1,59 +1,32 @@
 <script lang="js">
-        const { data } = $props();
+
+    // Page Inputs
+    let site_title = "Tables";
+    let page_title = "Our Tables";
+
+    // Functionality and More Content
+    const { data } = $props();
+    
 </script>
 
-<!-- Old Version -->
-<!-- <div class="container">
-    <div class="containerInner">
-        <h2>You might also like</h2>
-        <div class="row">
-            <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
-                <div class="productText">
-                    <h4>Minimalist White Ceramic Planter</h4>
-                    <p >$34.99</p>
-                </div>
-            </a><a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
-                <div class="productText">
-                    <h4>Minimalist White Ceramic Planter</h4>
-                    <p >$34.99</p>
-                </div>
-            </a><a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
-                <div class="productText">
-                    <h4>Minimalist White Ceramic Planter</h4>
-                    <p >$34.99</p>
-                </div>
-            </a><a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
-                <div class="productText">
-                    <h4>Minimalist White Ceramic Planter</h4>
-                    <p >$34.99</p>
-                </div>
-            </a><a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
-                <div class="productText">
-                    <h4>Minimalist White Ceramic Planter</h4>
-                    <p >$34.99</p>
-                </div>
-            </a>
-        </div>
-        <div id="viewBtnDiv">
-            <a href="" id="viewBtn"> View Collection</a>
-        </div>
-    </div>         
-</div> -->
-
-<!-- ----------- -->
+<svelte:head>
+    <title>Crafted Comfort | {site_title} </title>
+    <meta
+        name="description"
+        content="This is where the description goes for SEO"
+    >
+</svelte:head>
 
 <!-- NEW SVELTE + Supabase VERSION -->
+<!-- <div class="header"> -->
+<h1 class="pageTitle">{page_title}</h1>
+<!-- </div> -->
+
 <div class="container">
     <div class="containerInner">
-        <h2>New Arrivals</h2>
         <div class="row">
             {#if data.products}
-                {#each data.products.filter(product => product.tags.includes('new')).slice(0, 5) as product}
+                {#each data.products.filter(product => product.tags.includes('tables')) as product}
                     <a href="/products/{product.slug}" class="product">
                         <img src={product.productImg} alt={product.title} />
                         <div class="productText">
@@ -66,8 +39,9 @@
                     <p>Loading...</p>
             {/if}
         </div>
+        <hr>
         <div id="viewBtnDiv">
-            <a href="/products/new/" id="viewBtn"> View Collection</a>
+            <a href="/products/" id="viewBtn">View All Our Products</a>
         </div>
     </div>
 </div>
@@ -77,6 +51,13 @@
 
     /* *{
         border: 1px solid red;
+    } */
+
+    /* .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
     } */
 
     .container{
@@ -166,6 +147,12 @@
             gap: 20px;
             padding: 20px 0; 
         }
+        /* .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        } */
     }
 
     @media (max-width: 600px){

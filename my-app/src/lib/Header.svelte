@@ -6,6 +6,29 @@
 
     $: cartEmpty = $total_items < 1;
 
+    // Nav Inputs
+
+    let navItem1 = "Plant pots";
+    let navItem1_link = "/products/plant-pots/";
+
+    let navItem2 = "Ceramics";
+    let navItem2_link = "/products/ceramics";
+
+    let navItem3 = "Tables";
+    let navItem3_link = "/products/tables";
+
+    let navItem4 = "Chairs";
+    let navItem4_link = "/products/chairs";
+
+    let navItem5 = "Crockery";
+    let navItem5_link = "/products/crockery";
+
+    let navItem6 = "Tableware";
+    let navItem6_link = "/products/tableware";
+
+    let navItem7 = "Cutlery";
+    let navItem7_link = "/products/cutlery";
+
 </script>
 
 <header>
@@ -32,15 +55,16 @@
                     <div class="bar"></div>
                 </a>
             </div>
+
             <div class="nav-links" class:open={isOpen}>
               <ul class="nav-ul">
-                <a href="#"><li>Plant pots</li></a>
-                <a href="#"><li>Ceramics</li></a>
-                <a href="#"><li>Tables</li></a>
-                <a href="#"><li>Chairs</li></a>
-                <a href="#"><li>Crockery</li></a>
-                <a href="#"><li>Tableware</li></a>
-                <a href="#"><li>Cutlery</li></a>
+                <a href={navItem1_link}><li>{navItem1}</li></a>
+                <a href={navItem2_link}><li>{navItem2}</li></a>
+                <a href={navItem3_link}><li>{navItem3}</li></a>
+                <a href={navItem4_link}><li>{navItem4}</li></a>
+                <a href={navItem5_link}><li>{navItem5}</li></a>
+                <a href={navItem6_link}><li>{navItem6}</li></a>
+                <a href={navItem7_link}><li>{navItem7}</li></a>
               </ul>    
             </div>
             
@@ -48,11 +72,7 @@
         
     </div>
     
-<!--     
-    <h1>Hello {name}</h1>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum dolore quam soluta aut suscipit nisi sunt reiciendis unde. Quisquam, molestiae sapiente. Aspernatur alias est cumque facere, quam quisquam consequuntur tempora?</p>
- -->
 
 </header>
 

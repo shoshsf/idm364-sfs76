@@ -2,30 +2,30 @@
     <div class="containerInner">
         <h3>What makes our brand different</h3>
         <div class="row">
-            <a href="#" class="product">
+            <div class="product">
                 <div class="productText">
                     <h4>Next day as standard</h4>
                     <p>Order before 3pm and get your order the next day as standard</p>
                 </div>
-            </a>
-            <a href="#" class="product">
+            </div>
+            <div class="product">
                 <div class="productText">
                     <h4>Made by true artisans</h4>
                     <p>Handmade crafted goods made with real passion and craftmanship</p>
                 </div>
-            </a>
-            <a href="#" class="product">
+            </div>
+            <div class="product">
                 <div class="productText">
                     <h4>Unbeatable prices</h4>
                     <p >For our materials and quality, you won't find better prices anywhere</p>
                 </div>
-            </a>
-            <a href="#" class="product">
+            </div>
+            <div class="product">
                 <div class="productText">
                     <h4>Recycled packaging</h4>
                     <p>We use 100% recycled packaging to ensure our footprint is manageable</p>
                 </div>
-            </a>
+            </div>
         </div>
     </div>
 </div>

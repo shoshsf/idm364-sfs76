@@ -1,5 +1,18 @@
+<!-- NEW VERSION CONNECTED TO SUPABASE! -->
+
+<script lang="js">
+
+    // Page Inputs
+    let site_title = "Products";
+    let page_title = "Our Products";
+
+    // Functionality and More Content
+    const { data } = $props();
+
+</script>
+
 <svelte:head>
-    <title>Crafted Comfort | Products</title>
+    <title>Crafted Comfort | {site_title}</title>
     <meta
         name="description"
         content="This is where the description goes for SEO"
@@ -7,47 +20,9 @@
     
 </svelte:head>
 
-<!-- <script>
-    const { data } = $props();
 
-    $inspect(data);
-    
-    import ProductSort from "$lib/ProductSort.svelte";
-    // import ProductItemsGrid from "$lib/ProductItemsGrid.svelte";
-</script> -->
+<h1 class="pageTitle">{page_title}</h1>
 
-<!-- <main>
-    <h1>View All Products</h1>
-    <div class="product-grid">
-        {#each data.products as {name, productImg, price, slug}}
-            <a href="/products/{slug}" class="product">
-                <img src={productImg} alt={name} />
-                <div class="productText">
-                    <h4>{name}</h4>
-                    <p><strong>Price:</strong> ${price}</p>
-                </div>
-            </a>
-        {/each}
-    </div>
-
-</main> -->
-
-
-<!--  OLD LOCAL DATABASE Version  -->
-
-
-
-
-<!-- NEW VERSION CONNECTED TO SUPABASE! -->
-
-<script lang="js">
-     
-    const { data } = $props();
-    // $inspect(data);
-
-</script>
-
-<h1>View Our Products</h1>
 
 <div class="product-grid">
     {#if data.products}
@@ -139,4 +114,33 @@
         }
     }
 </style>
+
+
+<!--  OLD LOCAL DATABASE Version  -->
+
+    <!-- <script>
+        const { data } = $props();
+
+        $inspect(data);
+        
+        import ProductSort from "$lib/ProductSort.svelte";
+        // import ProductItemsGrid from "$lib/ProductItemsGrid.svelte";
+    </script> -->
+
+    <!-- <main>
+    <h1>View All Products</h1>
+    <div class="product-grid">
+        {#each data.products as {name, productImg, price, slug}}
+            <a href="/products/{slug}" class="product">
+                <img src={productImg} alt={name} />
+                <div class="productText">
+                    <h4>{name}</h4>
+                    <p><strong>Price:</strong> ${price}</p>
+                </div>
+            </a>
+        {/each}
+    </div>
+
+</main> -->
+<!-- ---------------------------- -->
 

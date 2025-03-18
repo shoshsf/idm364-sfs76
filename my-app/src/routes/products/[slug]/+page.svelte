@@ -1,5 +1,11 @@
 <script lang="js">
 
+    //Page Input
+
+    let site_title = "Product";
+
+    // Functionality and More Content
+
     const {data} = $props();
 
     const { title, longDescription, price, totalAvailable, heroImg, cartImg, height, width, depth} = data.product;
@@ -7,7 +13,6 @@
     $inspect(data);
 
     import Counter from '$lib/Counter.svelte';
-    import MightLikeView from "$lib/MightLikeView.svelte";
     import OurBrand from "$lib/OurBrand.svelte";
 
     let zoomed = false;
@@ -23,6 +28,16 @@
         }
     }
 </script>
+
+<svelte:head>
+
+    <title>Crafted Comfort | {site_title} </title>
+    <meta
+        name="description"
+        content="This is where the description goes for SEO"
+    >
+
+</svelte:head>
 
 
 <div class="hero">
@@ -65,12 +80,11 @@
             
         </div>
 
-        <Counter />
-        
+        <Counter product={data.product} />
+                
     </div>     
 </div>
 
-<MightLikeView />
 <OurBrand />
 
 

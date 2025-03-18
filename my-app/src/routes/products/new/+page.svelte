@@ -1,14 +1,28 @@
 <script lang="js">
-        const { data } = $props();
+
+    // Page Inputs
+    let site_title = "New Arrivals";
+    let page_title = "Our New Arrivals";
+        
+    // Functionality and More Content
+    const { data } = $props();
+
 </script>
 
+<svelte:head>
+    <title>Crafted Comfort | {site_title} </title>
+    <meta
+        name="description"
+        content="This is where the description goes for SEO"
+    >
+</svelte:head>
+
 <!-- NEW SVELTE + Supabase VERSION -->
- 
-<h1>View Our Products</h1>
+
+<h1 class="pageTitle">{page_title}</h1>
 
 <div class="container">
     <div class="containerInner">
-        <!-- <h2>New Arrivals</h2> -->
         <div class="row">
             {#if data.products}
                 {#each data.products.filter(product => product.tags.includes('new')) as product}
@@ -24,8 +38,9 @@
                     <p>Loading...</p>
             {/if}
         </div>
+        <hr>
         <div id="viewBtnDiv">
-            <a href="" id="viewBtn"> View Collection</a>
+            <a href="/products/" id="viewBtn">View All Our Products</a>
         </div>
     </div>
 </div>
@@ -108,6 +123,7 @@
         color: #F9F9F9;
         transition-delay: 0.3s; 
     }
+
 
     @media (max-width: 1090px){
         .row {

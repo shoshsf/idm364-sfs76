@@ -1,4 +1,9 @@
-<div class="container">
+<script lang="js">
+    const { data } = $props();
+</script>
+
+<!-- Old Version -->
+    <!-- <div class="container">
     <div class="containerInner">
         <h2>Our popular products</h2>
         <div class="row">
@@ -9,13 +14,6 @@
                     <p >$34.99</p>
                 </div>
             </a>
-            <!-- <a href="#" class="product">
-                <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
-                <div class="productText">
-                    <h4>Minimalist White Ceramic Planter</h4>
-                    <p >$34.99</p>
-                </div>
-            </a> -->
             <a href="#" class="product">
                 <img src="https://res.cloudinary.com/drkhhutl3/image/upload/v1739154274/product_MinimalistWhiteCeramicPlanter_nakk53.png" alt="">
                 <div class="productText">
@@ -40,6 +38,32 @@
             <a href="" id="viewBtn"> View Collection</a>
         </div>
     </div>         
+</div> --> 
+<!-- ----------- -->
+
+<!-- NEW SVELTE + Supabase VERSION -->
+<div class="container">
+    <div class="containerInner">
+        <h2>What's Popular</h2>
+        <div class="row">
+            {#if data.products}
+                {#each data.products.filter(product => product.tags.includes('popular')).slice(0, 5) as product}
+                    <a href="/products/{product.slug}" class="product">
+                        <img src={product.productImg} alt={product.title} />
+                        <div class="productText">
+                            <h4>{product.title}</h4>
+                            <p><strong>Price:</strong> ${product.price}</p>
+                        </div>
+                    </a>
+                {/each}
+                {:else}
+                    <p>Loading...</p>
+            {/if}
+        </div>
+        <div id="viewBtnDiv">
+            <a href="/products/popular/" id="viewBtn"> View Collection</a>
+        </div>
+    </div>
 </div>
 
 <style>

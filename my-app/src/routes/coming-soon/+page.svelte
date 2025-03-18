@@ -1,11 +1,12 @@
 <script>
 
     // Page Inputs
-    let site_title ="Error 😿";
-    let headerText = "Oops! Something went wrong...😿";
-    let paraText = "We couldn’t find what you were looking for. But don’t worry, you can always go back home!";
+    let site_title ="Coming Soon";
+    let headerText = "Something Exciting is Coming!";
+    let paraText = "We’re working on something special and it is almost here!";
 
     // Functionality and More Content
+
         // Navigate back to home when the button is clicked
         function goHome() {
             window.location.href = '/';
@@ -13,15 +14,16 @@
 </script>
 
 <svelte:head>
-<title>Crafted Comfort | {site_title} </title>
-<meta
-    name="description"
-    content="This is where the description goes for SEO"
->
+    <title>Crafted Comfort | {site_title} </title>
+    <meta
+        name="description"
+        content="This is where the description goes for SEO"
+    >
 </svelte:head>
 
 <div class="error-container">
     <h1>{headerText}</h1>
+    <div>✨✨✨</div>
     <p>{paraText}</p>
     <button on:click={goHome}>Go Back Home</button>
 </div>

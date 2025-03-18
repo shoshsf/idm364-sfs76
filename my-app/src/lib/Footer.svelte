@@ -1,34 +1,90 @@
+<script>
+
+    // Menu Inputs
+
+    let menuItem1 = "New Arrivals";
+    let menuItem1_link = "/products/new/";
+
+    let menuItem2 = "Best Sellers";
+    let menuItem2_link = "/coming-soon/";
+
+    let menuItem3 = "What's Popular";
+    let menuItem3_link = "/products/popular/";
+
+    let menuItem4 = "All Products";
+    let menuItem4_link = "/products/";
+
+    // Category Inputs
+
+    let cateItem1 = "Plant Pots";
+    let cateItem1_link = "#";
+
+    let cateItem2 = "Ceramics";
+    let cateItem2_link = "#";
+
+    let cateItem3 = "Tables";
+    let cateItem3_link = "#";
+
+    let cateItem4 = "Chairs";
+    let cateItem4_link = "#";
+
+    let cateItem5 = "Crockery";
+    let cateItem5_link = "#";
+
+    let cateItem6 = "Tableware";
+    let cateItem6_link = "#";
+
+    let cateItem7 = "Cutlery";
+    let cateItem7_link = "#";
+
+    // Our Company Inputs
+
+    let companyItem1 = "About Us";
+    let companyItem1_link = "/about/";
+
+    let companyItem2 = "Contact Us";
+    let companyItem2_link = "/coming-soon/";
+
+    let companyItem3 = "Privacy";
+    let companyItem3_link = "/coming-soon/";
+
+    let companyItem4 = "Returns Policy";
+    let companyItem4_link = "/coming-soon/";
+
+</script>
+
+
 <footer>
     <div id="footerUpper">
         <div id="footerLeft">
             <div class="footerLinks">
                 <h4>Menu</h4>
                 <ul>
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Best Sellers</a></li>
-                    <li><a href="#">Recently Viewed</a></li>
-                    <li><a href="#">Popular this Week</a></li>
-                    <li><a href="#">All Products</a></li>
+                    <li><a href={menuItem1_link}>{menuItem1}</a></li>
+                    <li><a href={menuItem2_link}>{menuItem2}</a></li>
+                    <li><a href={menuItem3_link}>{menuItem3}</a></li>
+                    <li><a href={menuItem4_link}>{menuItem4}</a></li>
 
                 </ul>
             </div>
             <div class="footerLinks borderLine" >
                 <h4 >Categories</h4>
                 <ul>
-                    <li><a href="#">Crockery</a></li>
-                    <li><a href="#">Furniture</a></li>
-                    <li><a href="#">Homeware</a></li>
-                    <li><a href="#">Plant Pots</a></li>
-                    <li><a href="#">Chairs</a></li>
+                    <li><a href={cateItem1_link}>{cateItem1}</a></li>
+                    <li><a href={cateItem2_link}>{cateItem2}</a></li>
+                    <li><a href={cateItem3_link}>{cateItem3}</a></li>
+                    <li><a href={cateItem4_link}>{cateItem4}</a></li>
+                    <li><a href={cateItem5_link}>{cateItem5}</a></li>
                 </ul>
             </div>
             <div class="footerLinks">
                 <h4>Our Company</h4>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href={companyItem1_link}>{companyItem1}</a></li>
+                    <li><a href={companyItem2_link}>{companyItem2}</a></li>
+                    <li><a href={companyItem3_link}>{companyItem3}</a></li>
+                    <li><a href={companyItem4_link}>{companyItem4}</a></li>
+
                 </ul>
             </div>
         </div>
