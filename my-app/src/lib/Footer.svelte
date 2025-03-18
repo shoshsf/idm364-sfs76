@@ -16,26 +16,26 @@
 
     // Category Inputs
 
-    let cateItem1 = "Plant Pots";
-    let cateItem1_link = "#";
+    let navItem1 = "Plant pots";
+    let navItem1_link = "/products/plant-pots/";
 
-    let cateItem2 = "Ceramics";
-    let cateItem2_link = "#";
+    let navItem2 = "Ceramics";
+    let navItem2_link = "/products/ceramics";
 
-    let cateItem3 = "Tables";
-    let cateItem3_link = "#";
+    let navItem3 = "Tables";
+    let navItem3_link = "/products/tables";
 
-    let cateItem4 = "Chairs";
-    let cateItem4_link = "#";
+    let navItem4 = "Chairs";
+    let navItem4_link = "/products/chairs";
 
-    let cateItem5 = "Crockery";
-    let cateItem5_link = "#";
+    let navItem5 = "Crockery";
+    let navItem5_link = "/products/crockery";
 
-    let cateItem6 = "Tableware";
-    let cateItem6_link = "#";
+    let navItem6 = "Tableware";
+    let navItem6_link = "/products/tableware";
 
-    let cateItem7 = "Cutlery";
-    let cateItem7_link = "#";
+    let navItem7 = "Cutlery";
+    let navItem7_link = "/products/cutlery";
 
     // Our Company Inputs
 
@@ -70,11 +70,11 @@
             <div class="footerLinks borderLine" >
                 <h4 >Categories</h4>
                 <ul>
-                    <li><a href={cateItem1_link}>{cateItem1}</a></li>
-                    <li><a href={cateItem2_link}>{cateItem2}</a></li>
-                    <li><a href={cateItem3_link}>{cateItem3}</a></li>
-                    <li><a href={cateItem4_link}>{cateItem4}</a></li>
-                    <li><a href={cateItem5_link}>{cateItem5}</a></li>
+                    <li><a href={navItem1_link}>{navItem1}</a></li>
+                    <li><a href={navItem2_link}>{navItem2}</a></li>
+                    <li><a href={navItem3_link}>{navItem3}</a></li>
+                    <li><a href={navItem4_link}>{navItem4}</a></li>
+                    <li><a href={navItem5_link}>{navItem5}</a></li>
                 </ul>
             </div>
             <div class="footerLinks">
