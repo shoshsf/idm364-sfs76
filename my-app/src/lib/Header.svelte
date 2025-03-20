@@ -58,13 +58,13 @@
 
             <div class="nav-links" class:open={isOpen}>
               <ul class="nav-ul">
-                <a href={navItem1_link}><li>{navItem1}</li></a>
-                <a href={navItem2_link}><li>{navItem2}</li></a>
-                <a href={navItem3_link}><li>{navItem3}</li></a>
-                <a href={navItem4_link}><li>{navItem4}</li></a>
-                <a href={navItem5_link}><li>{navItem5}</li></a>
-                <a href={navItem6_link}><li>{navItem6}</li></a>
-                <a href={navItem7_link}><li>{navItem7}</li></a>
+                <a href={navItem1_link} on:click={() => isOpen = false}><li>{navItem1}</li></a>
+                <a href={navItem2_link} on:click={() => isOpen = false}><li>{navItem2}</li></a>
+                <a href={navItem3_link} on:click={() => isOpen = false}><li>{navItem3}</li></a>
+                <a href={navItem4_link} on:click={() => isOpen = false}><li>{navItem4}</li></a>
+                <a href={navItem5_link} on:click={() => isOpen = false}><li>{navItem5}</li></a>
+                <a href={navItem6_link} on:click={() => isOpen = false}><li>{navItem6}</li></a>
+                <a href={navItem7_link} on:click={() => isOpen = false}><li>{navItem7}</li></a>
               </ul>    
             </div>
             
@@ -72,8 +72,6 @@
         
     </div>
     
-
-
 </header>
 
 <style>
