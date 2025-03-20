@@ -3,6 +3,9 @@
     //Page Input
 
     let site_title = "Product";
+    let meta_name = "description";
+    let meta_content = "This is the home page.";
+
 
     // Functionality and More Content
 
@@ -30,13 +33,11 @@
 </script>
 
 <svelte:head>
-
     <title>Crafted Comfort | {site_title} </title>
     <meta
-        name="description"
-        content="This is where the description goes for SEO"
+        name= {meta_name}
+        content= {meta_content}
     >
-
 </svelte:head>
 
 

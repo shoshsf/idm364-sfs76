@@ -2,6 +2,9 @@
 
     // Page Inputs
     let site_title = "About Us";
+    let meta_name = "description";
+    let meta_content = "This is the home page.";
+
     let page_title = "About Crafted Comforts";
     let subtitle = "Designed for Elegance. Crafted for Comfort.";
     let description = "At Crafted Comforts, we blend aesthetics with functionality to create furniture that transforms spaces into sanctuaries. Our designs embrace simplicity, sustainability, and superior craftsmanship, ensuring every piece tells a story of comfort and elegance.";
@@ -14,8 +17,8 @@
 <svelte:head>
     <title>Crafted Comfort | {site_title} </title>
     <meta
-        name="description"
-        content="This is where the description goes for SEO"
+        name= {meta_name}
+        content= {meta_content}
     >
 </svelte:head>
 

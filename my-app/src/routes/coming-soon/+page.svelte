@@ -2,6 +2,9 @@
 
     // Page Inputs
     let site_title ="Coming Soon";
+    let meta_name = "description";
+    let meta_content = "This is the home page.";
+
     let headerText = "Something Exciting is Coming!";
     let paraText = "We’re working on something special and it is almost here!";
 
@@ -16,10 +19,11 @@
 <svelte:head>
     <title>Crafted Comfort | {site_title} </title>
     <meta
-        name="description"
-        content="This is where the description goes for SEO"
+        name= {meta_name}
+        content= {meta_content}
     >
 </svelte:head>
+
 
 <div class="error-container">
     <h1>{headerText}</h1>

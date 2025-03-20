@@ -2,6 +2,8 @@
 <script>
     // Page Inputs
     let site_title = "Shopping Cart";
+        let meta_name = "description";
+        let meta_content = "This is the home page.";
     let page_title = "Your Shopping Cart";
   
   
@@ -72,12 +74,13 @@
 </script>
   
 <svelte:head>
-    <title>Crafted Comfort | {site_title}</title>
+    <title>Crafted Comfort | {site_title} </title>
     <meta
-        name="description"
-        content="This is where the description goes for SEO"
+        name= {meta_name}
+        content= {meta_content}
     >
 </svelte:head>
+
       
 <div class="cartContainer">
     <h1>{page_title}</h1>
