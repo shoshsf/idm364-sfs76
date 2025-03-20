@@ -26,7 +26,7 @@
     <div class="containerInner">
         <div class="row">
             {#if data.products}
-                {#each data.products.filter(product => product.tags.includes('ceramics')) as product}
+                {#each data.products.filter(product => product.tags.includes('cutlery')) as product}
                     <a href="/products/{product.slug}" class="product">
                         <img src={product.productImg} alt={product.title} />
                         <div class="productText">
