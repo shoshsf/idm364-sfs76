@@ -170,7 +170,7 @@
         text-align: left;
     }
     .cartTable th {
-        background-color: #f4f4f4;
+        /* background-color: #f4f4f4; */
     }
     
 
