@@ -111,12 +111,12 @@
 	}
   
 	.counter span {
-		padding: 20px 30px;
+		padding: 10px 30px;
+    	height: fit-content;
 		font-size: 25px;
 	  	font-weight: bold;
 		text-align: center;
 		font-family: 'Raleway', sans-serif;
-
 	}
   
 
